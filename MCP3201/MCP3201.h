@@ -1,18 +1,19 @@
 /******************************************************************************
  *                                                                            *
- *  File:         MCP3201.h                                               	  *
+ *  File:         MCP3201.h                                                   *
  *                                                                            *
  *  Copyright:    (c) Microcontrolandos, 2015.                                *
  *                                                                            *
  *  Author:       Tiago Henrique.                                             *
  *                                                                            *
- *  Description:  Declaração da biblioteca MCP3201 para o MikroC.   	        *
+ *  Description:  Declaração da biblioteca MCP3201 para o MikroC.             *
  *                                                                            *
  ****************************       CHANGE LOG       **************************
  * Version | ACTION                                           | DATE          *
  * --------|--------------------------------------------------|-------------- *
  *         |                                                  |               *
  *  1.0.0  | - Initial release                                | 210515        *
+ *  1.0.1  | - Possible bux fixed                             | 280515        *
  *         |                                                  |               *
  *****************************************************************************/
 
