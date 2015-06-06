@@ -6,10 +6,10 @@
  *                                                                            *
  *  Author:       Tiago Henrique.                                             *
  *                                                                            *
- *  Description:  Implementação da biblioteca MCP3201 para o MikroC.          *
- *                MCP3201 é um conversor Analógico para Digital de 12 bits.   *
+ *  Description:  Implementacao da biblioteca MCP3201 para o MikroC.          *
+ *                MCP3201 e um conversor Analogico para Digital de 12 bits.   *
  *                                                                            *
- *  Requirements: - Requer um MCU com no mínino 3 pinos I/O disponíveis.      *
+ *  Requirements: - Requer um MCU com no minino 3 pinos I/O disponiveis.      *
  *                                                                            *
  *  Notes:        None.                                                       *
  *                                                                            *
@@ -28,9 +28,9 @@
 
 /******************************************************************************
  *                                                                            *
- *  Function:     unsigned MCP3201_Init()                                     *
+ *  Function:     void MCP3201_Init()                                         *
  *                                                                            *
- *  Description:  Configura e inicializa a comunicação com o sensor MCP3201.  *
+ *  Description:  Configura e inicializa a comunicacao com o sensor MCP3201.  *
  *                                                                            *
  *  Parameters:   None.                                                       *
  *                                                                            *
@@ -43,7 +43,7 @@
  *****************************************************************************/
 void MCP3201_Init()
 {
-  //Define os pinos como saída.
+  //Define os pinos como saida.
   MCP3201_CS_Direction = 0;
   MCP3201_Clk_Direction = 0;
   //Define o pino como entrada.
@@ -60,15 +60,15 @@ void MCP3201_Init()
  *                                                                            *
  *  Function:     unsigned MCP3201_Read()                                     *
  *                                                                            *
- *  Description:  Inicia a conversão.                                         *
-                  Obtém o valor da conversão realizada pelo MCP3201.          *
+ *  Description:  Inicia a conversao.                                         *
+                  Obtem o valor da conversao realizada pelo MCP3201.          *
  *                                                                            *
  *  Parameters:   None.                                                       *
  *                                                                            *
- *  Return Value: O resultado da conversão.                                   *
+ *  Return Value: O resultado da conversao.                                   *
  *                                                                            *
  *  Requirements: O sensor MCP3201 deve ser inicializado antes de utilizar    *
- *                esta função. Veja a função MCP3201_Init.                    *
+ *                esta funcao. Veja a funcao MCP3201_Init.                    *
  *                                                                            *
  *  Notes:        None.                                                       *
  *                                                                            *
@@ -82,7 +82,7 @@ char i;
   MCP3201_CS = 0; //Power-Up.
   
   //Ignoramos os 3 primeiros bits.
-  //Iniciamos a conversão.
+  //Iniciamos a conversao.
   for( i = 0; i < 3; i++ )
   {
     //Pulso de clock.
