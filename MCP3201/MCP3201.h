@@ -6,7 +6,7 @@
  *                                                                            *
  *  Author:       Tiago Henrique.                                             *
  *                                                                            *
- *  Description:  Declaração da biblioteca MCP3201 para o MikroC.             *
+ *  Description:  Declaracao da biblioteca MCP3201 para o MikroC.             *
  *                                                                            *
  ****************************       CHANGE LOG       **************************
  * Version | ACTION                                           | DATE          *

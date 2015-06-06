@@ -28,7 +28,7 @@
 
 /******************************************************************************
  *                                                                            *
- *  Function:     unsigned MCP3201_Read()                                     *
+ *  Function:     unsigned MCP3201_Init()                                     *
  *                                                                            *
  *  Description:  Configura e inicializa a comunicação com o sensor MCP3201.  *
  *                                                                            *
