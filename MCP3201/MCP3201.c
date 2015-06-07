@@ -30,7 +30,7 @@
  *                                                                            *
  *  Function:     void MCP3201_Init()                                         *
  *                                                                            *
- *  Description:  Configura e inicializa a comunicacao com o sensor MCP3201.  *
+ *  Description:  Configura e inicializa a comunicacao com o chip MCP3201.    *
  *                                                                            *
  *  Parameters:   None.                                                       *
  *                                                                            *
@@ -67,8 +67,8 @@ void MCP3201_Init()
  *                                                                            *
  *  Return Value: O resultado da conversao.                                   *
  *                                                                            *
- *  Requirements: O sensor MCP3201 deve ser inicializado antes de utilizar    *
- *                esta funcao. Veja a funcao MCP3201_Init.                    *
+ *  Requirements: O MCP3201 deve ser inicializado antes de utilizar esta      *
+ *                funcao. Veja a funcao MCP3201_Init.                         *
  *                                                                            *
  *  Notes:        None.                                                       *
  *                                                                            *
