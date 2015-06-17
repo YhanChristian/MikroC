@@ -16,6 +16,9 @@
  *         |                                                  |               *
  *****************************************************************************/
  
+#ifndef __MCP3208
+#define __MCP3208
+ 
 extern sfr sbit MCP3208_CS;
 extern sfr sbit MCP3208_Clk;
 extern sfr sbit MCP3208_SDO;
@@ -48,3 +51,5 @@ enum MCP3208_INPUT_TYPE
 /* public */
 unsigned MCP3208_Read( enum MCP3208_INPUT_TYPE );
 void MCP3208_Init();
+
+#endif
