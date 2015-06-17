@@ -16,6 +16,8 @@
  *  1.0.1  | - Possible bux fixed                             | 280515        *
  *         |                                                  |               *
  *****************************************************************************/
+#ifndef __MCP3201
+#define __MCP3201
 
 #define MCP3201_MODE 1
 
@@ -29,3 +31,5 @@ extern sfr sbit MCP3201_Data_Direction;
 /* public */
 unsigned MCP3201_Read();
 void MCP3201_Init();
+
+#endif
