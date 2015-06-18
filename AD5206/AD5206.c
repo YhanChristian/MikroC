@@ -22,6 +22,7 @@
  * --------|--------------------------------------------------|-------------- *
  *         |                                                  |               *
  *  1.0.0  | - Initial release                                | 170615        *
+ *  1.0.1  | - Improved performance                           | 170615        *
  *         |                                                  |               *
  *****************************************************************************/
 
@@ -75,21 +76,21 @@ char i = 0; //Contador de bits.
   
   AD5206_CS = 0; //Power-Up.
   
-  //Envia 8 bits do canal selecionado. Envia o MSB primeiro.
-  for( ; i < 8; i++ )
+  //Envia 3 bits do canal selecionado. Envia o MSB primeiro.
+  for( ; i < 3; i++ )
   {
-    //Escreve o bit MSB.
-    AD5206_Data = channel.B7;
+    //Escreve o bit 2.
+    AD5206_Data = channel.B2;
     //Pulso de clock.
     AD5206_Clock = 1;
     Delay_us( 1 );
     AD5206_Clock = 0;
-    //O bit mais a direita passa a ser o o bit MSB.
+    //O bit mais a direita passa a ser o o bit 2.
     channel <<= 1;
   }
   
   //Envia 8 bits do valor do potenciometro. Envia o MSB primeiro.
-  for( ; i < 16; i++ )
+  for( ; i < 11; i++ )
   {
     //Escreve o bit MSB.
     AD5206_Data = valor.B7;
